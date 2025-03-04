@@ -23,38 +23,34 @@
       font-family: 'Courier New', Courier, monospace;
     }
 
-    #navbar {
-      display: flex;
-      width: 100%;
-      height: 100px;
-      background-color: rgb(255, 235, 205);
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: rgb(44, 44, 44);
     }
 
-    #navbar img {
-      margin: 20px;
-      height: 100px;
+    .navbar .logo img {
+        height: 50px;
     }
 
-    #navbarLinks {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      width: 100%;
-      background-color: blanchedalmond;
+    .navbarLinks {
+        display: flex;
+        gap: 15px;
     }
 
-    #navbarLinks a {
-      color: black;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 10px;
-      font-size: 14px;
-      text-align: center;
+    .navbarLinks a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 8px 12px;
+        transition: background-color 0.3s, color 0.3s;
     }
 
-    /* Change color on hover */
-    #navbarLinks a:hover {
-      color: white;
+    .navbarLinks a:hover {
+        background-color: rgb(212, 180, 137);
+        color: rgb(44, 44, 44);
     }
 
     .aloituskuva {
@@ -232,30 +228,28 @@
 </head>
 <body>
   <div class="lightbrown">
-<div id="container">
-  <div id="navbar" class="logo">
-      <div>
-      <img src="https://cdn.pixabay.com/photo/2014/04/02/16/23/coffee-307147_1280.png">
+    <div id="container">
+      <div id="navbar" class="navbar">
+        <div class="logo">
+          <img src="https://cdn.pixabay.com/photo/2014/04/02/16/23/coffee-307147_1280.png" alt="CoffeeCo Logo">
+        </div>
+        <div class="navbarLinks">
+          <a href="#rekisteröidy">Sign up</a>
+          <a href="#tietoa">Contact Us</a>
+          <a href="#tuotevalikoima">Products</a>
+          <a href="#tuotevideo">Media</a>
+          <a href="#index">Home</a>
+        </div>
       </div>
-    </div>
-    <div id="navbarLinks">
-      <div>
-      <a href="#rekisteröidy">Sign up</a>
-      <a href="#tietoa">Contact Us</a>
-      <a href="#tuotevalikoima">Products</a>
-      <a href="#tuotevideo">Media</a>
-      <a href="#index">Home</a>
-      <a name="index">
-      </div>
-    </div>
 
-    <div class="aloituskuva" title="CoffeeCo. Background">
-    <div class="aloituskuvaTeksti">
+      <div class="aloituskuva" title="CoffeeCo. Background">
+        <div class="aloituskuvaTeksti">
           <h1>Coffee.Co</h1>
           <p>Freshest Coffee in internet!</p>
-      <form method="get" action="#rekisteröidy">
-        <button class="button" type="Tilaa tästä">Order Here</button></form>
-        <br><br>
+          <form method="get" action="#rekisteröidy">
+            <button class="button" type="submit">Order Here</button>
+          </form>
+          <br><br>
         </div>
       </div>
     </div>
