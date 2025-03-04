@@ -17,7 +17,9 @@
         align-items: center;
         margin: auto;
         height: 600px;
-        background-color: white;
+        margin-top: 50px;
+
+        color: white;
         font-family: 'Courier New', Courier, monospace;
         padding-top: 70px; /* Adjust padding to avoid content being hidden behind the navbar */
     }
@@ -50,11 +52,14 @@
         font-size: 18px;
         padding: 8px 12px;
         transition: background-color 0.3s, color 0.3s;
+        border-radius: 4px;
     }
 
     .navbarLinks a:hover {
         background-color: rgb(212, 180, 137);
         color: rgb(44, 44, 44);
+        border-radius: 4px;
+
     }
 
     .aloituskuva {
@@ -146,6 +151,18 @@
       width: 100%;
     }
 
+    @media screen and (max-width: 555px) {
+      .navbarLinks {
+        flex-direction: column;
+        align-items: center;
+      }
+      .navbarLinks a {
+        padding: 10px;
+        font-size: 14px;
+      }
+      
+    }
+
     @media screen and (min-width: 300px) {
       #container { width: 300px; }
       #navbar img { width: 75px; height: 65px; margin-top: 10px; }
@@ -158,6 +175,7 @@
       .darkestbrown { width: 100%; }
       .darkgrey { width: 100%; }
       .black { width: 100%; height: 100%; }
+      
     }
 
     @media only screen and (min-width: 480px) {
@@ -228,13 +246,15 @@
         <img src="https://cdn.pixabay.com/photo/2014/04/02/16/23/coffee-307147_1280.png" alt="CoffeeCo Logo">
     </div>
     <div class="navbarLinks">
+        <a href="#index">Home</a>
         <a href="#rekisteröidy">Sign up</a>
         <a href="#tietoa">Contact Us</a>
         <a href="#tuotevalikoima">Products</a>
         <a href="#tuotevideo">Media</a>
-        <a href="#index">Home</a>
     </div>
 </div>
+
+<a name="index"></a>
 
 <div id="container">
     <div class="aloituskuva" title="CoffeeCo. Background">
